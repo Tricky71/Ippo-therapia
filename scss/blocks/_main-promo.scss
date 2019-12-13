@@ -1,0 +1,85 @@
+.main-promo {
+    // position: relative;
+    margin: 0 auto;
+    // margin-top: -120px;
+    // min-height: 800px;
+    background-color: #1d2631;
+    z-index: 10;
+    // filter: brightness(30%) grayscale(50%);
+}
+
+.main-promo__slider {
+    @include reset-list;
+    min-height: 320px;
+}
+
+.main-promo__slider-item {
+    min-height: 320px;
+    background-repeat: no-repeat;
+    background-size: 768px auto;
+    background-position: top center;
+        &--1 {
+            background-image: url("../img/promo-slider-1-mob.jpg");
+        }
+        &--2 {
+            background-image: url("../img/promo-slider-2-mob.jpg");
+        }
+        &--3 {
+            background-image: url("../img/promo-slider-3-mob.jpg");
+        }
+        &--4 {
+            background-image: url("../img/promo-slider-4-mob.jpg");
+        }
+}
+
+@media (min-width: $tablet-width) {
+    .main-promo__slider {
+        min-height: 500px;
+    }
+
+    .main-promo__slider-item {
+        min-height: 500px;
+        background-repeat: no-repeat;
+        background-size: 1200px auto;
+        background-position: top center;
+            &--1 {
+                background-image: url("../img/promo-slider-1-tab.jpg");
+            }
+            &--2 {
+                background-image: url("../img/promo-slider-2-tab.jpg");
+            }
+            &--3 {
+                background-image: url("../img/promo-slider-3-tab.jpg");
+            }
+            &--4 {
+                background-image: url("../img/promo-slider-4-tab.jpg");
+            }
+    }
+    
+}
+
+@media (min-width: $desktop-width) {
+    .main-promo__slider {
+        min-height: 800px;
+    }
+
+    .main-promo__slider-item {
+        min-height: 800px;
+        background-repeat: no-repeat;
+        background-size: 1920px auto;
+        background-position: top center;
+            &--1 {
+                background-image: url("../img/promo-slider-1.jpg");
+            }
+            &--2 {
+                background-image: url("../img/promo-slider-2.jpg");
+            }
+            &--3 {
+                background-image: url("../img/promo-slider-3.jpg");
+            }
+            &--4 {
+                background-image: url("../img/promo-slider-4.jpg");
+            }
+    }
+}
+
